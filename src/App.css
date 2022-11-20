@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+#root {
+  --default-font-family: "Noto Sans KR", sans-serif;
+  --layout-horizontal-padding: 16px;
+  --layout-max-width: 1232px;
+  --calendar-font-size: 0.625rem;
+  --calendar-border: 1px solid white;
+  --calendar-title-font-size: 1.75rem;
+  --calendar-day-color: #e4d9ffb2;
+  --calendar-today-color: #6524ff65;
+  --calendar-day-other-color: #e4d9ff3c;
+}
+
+.wrapper {
+  max-width: var(--layout-max-width);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: var(--layout-horizontal-padding);
+  padding-right: var(--layout-horizontal-padding);
+}
+
+.fc-daygrid-day {
+  border: var(--calendar-border);
+  background-color: var(--calendar-day-color);
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: var(--calendar-border);
+}
+
+.fc-col-header-cell,
+.fc-day {
+  background-color: var(--calendar-day-color);
+  font-family: var(--default-font-family);
+}
+
+.fc-day-other {
+  background-color: var(--calendar-day-other-color);
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: var(--calendar-today-color);
+}
+
+.fc-day-sat .fc-daygrid-day-number {
+  color: blue;
+}
+
+.fc-day-sun .fc-daygrid-day-number {
+  color: red;
+}
+
+.fc-col-header-cell-cushion {
+  font-size: var(--calendar-font-size);
+}
+
+.fc-daygrid-day-number {
+  font-size: var(--calendar-font-size);
+}
+
+.fc-toolbar-title {
+  font-size: var(--calendar-title-font-size);
+}
+
+.fc-daygrid-day-events {
+  font-size: 10px;
+  font-family: var(--default-font-family);
+}
